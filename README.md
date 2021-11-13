@@ -15,3 +15,15 @@ num1, num2 = int(input()), int(input())
 print(num1, "+", num2, '=', (num1 + num2))
 print(num1, "-", num2, '=', (num1 - num2))
 print(num1, "*", num2, '=', (num1 * num2))
+
+
+
+chislo = int(input())
+num1 = chislo // 1000
+num2 = chislo % 1000 // 100
+num3 = chislo % 100 // 10
+num4 = chislo % 10
+print('Цифра в позиции тысяч равна', num1)
+print('Цифра в позиции сотен равна', num2)
+print('Цифра в позиции десятков равна', num3)
+print('Цифра в позиции единиц равна', num4)
