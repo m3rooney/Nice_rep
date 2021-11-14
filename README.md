@@ -27,3 +27,24 @@ print('Цифра в позиции тысяч равна', num1)
 print('Цифра в позиции сотен равна', num2)
 print('Цифра в позиции десятков равна', num3)
 print('Цифра в позиции единиц равна', num4)
+
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+da = 0
+net = 0
+a != b != c != d
+if a < b:
+    da = a
+else:
+    da = b
+if c < d:
+    net = c
+else: 
+    net = d
+if da < net:
+    print(da)
+else:
+    print(net)
