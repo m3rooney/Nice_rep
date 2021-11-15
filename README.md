@@ -48,3 +48,26 @@ if da < net:
     print(da)
 else:
     print(net)
+    
+    
+    import telebot
+
+bot = telebot.TeleBot('2109044481:AAF4Hs7_3JgdI3zThVodj-rOv5a2btWm6pQ')
+
+
+
+
+@bot.message_handler(content_types={'text'})
+def get_text_messages(message):
+    if message.text == "Привет":
+        bot.send_message(message.from_user.id, "Привет, чем я могу тебе помочь?")
+
+    elif message.text == "Кто я":
+        bot.send_message(message.from_user.id, message.from_user)
+    elif message.text == "/help":
+        bot.send_message(message.from_user.id, "Напиши привет")
+    else:
+        bot.send_message(message.from_user.id, "Я тебя не понимаю. Напиши /help.")
+
+
+bot.polling(none_stop=True, interval=0)
