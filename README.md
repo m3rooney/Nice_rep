@@ -71,3 +71,17 @@ def get_text_messages(message):
 
 
 bot.polling(none_stop=True, interval=0)
+
+a = int(input())
+b = int(input())
+c = int(input())
+a1 = 0
+b1 = 0
+c1 = 0
+if a > 0:
+    a1 = a
+if b > 0:
+    b1 = b
+if c > 0:
+    c1 = c
+print(a1 + b1 + c1)    
