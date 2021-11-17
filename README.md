@@ -85,3 +85,20 @@ if b > 0:
 if c > 0:
     c1 = c
 print(a1 + b1 + c1)    
+
+
+
+a, b, c = int(input()), int(input()), str(input())
+if c == '*':
+    print(a * b)
+elif c == '-':
+    print(a - b)
+elif c == '+':
+    print(a + b)
+elif c == '/':
+    if b == 0:
+        print("На ноль делить нельзя!")
+    else:
+        print(a / b)
+else:
+    print("Неверная операция")
