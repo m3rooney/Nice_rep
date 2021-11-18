@@ -102,3 +102,17 @@ elif c == '/':
         print(a / b)
 else:
     print("Неверная операция")
+    
+    
+    
+a = int(input())
+b = a // 100
+c = a // 10 % 10
+d = a % 10
+M = max(b, c, d)
+N = min(b, c, d)
+X = (b + c + d) - (M + N)
+if M - N == X:
+    print("Число интересное")
+else:
+    print("Число неинтересное")
