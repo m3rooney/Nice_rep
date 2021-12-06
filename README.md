@@ -116,3 +116,9 @@ if M - N == X:
     print("Число интересное")
 else:
     print("Число неинтересное")
+
+
+from math import radians, cos, sin, tan
+x = radians(float(input()))
+result = (sin(x) + cos(x) + ((tan(x)) ** 2))
+print(result)
